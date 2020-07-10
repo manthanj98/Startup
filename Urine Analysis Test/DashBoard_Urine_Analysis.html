@@ -1,0 +1,132 @@
+<!--
+Personal Information
+1. Name
+2. Age
+3. Sex
+4. Reg No
+5. Referred By
+6. Date
+
+Input
+1. Result
+2. S. Typhi "H"
+3. S. Typhi "O"
+4. S. Typhi "AH"
+5. S. Typhi "BH"
+
+	<form id="valform" action="Typhoid_Widal_Test.html" method="GET">
+	<table action="Typhoid_Widal_Test.html" class="table" width="100%">
+	<script type="text/javascript" src='./Typhoid_Widal_Main.js' defer></script>
+-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Urine Analysis Test</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+			<style>
+				table td{
+					border:0 !important;
+				}
+				.input{
+					border:none;
+					box-shadow:0 0 5px 0 #000;
+					border-radius:5px;
+					padding:2px 5px;
+					transition:.2s;
+				}
+				.input:hover{
+					box-shadow:0 0 10px 0 #000;
+				}
+                #heading{
+                    text-align: center;
+                }
+			</style>
+	</head>
+	<body>  
+        <h1 id='heading'>Urine Analysis Test</h1>
+			<div class=" container inputcontainer py-5" id="bodylayer">
+				<div class="formcontainer">
+					<form id="valform" action="Urine_Analysis_Test.html" method="GET">
+						<table action="Urine_Analysis_Test.html" class="table" width="100%">
+							
+							<tr>
+								<td>Name</td>
+								<td><input id="Name1" type="text" name="Name1" class="input"></td>
+								<td>Age/Sex</td>
+								<td><input id ='Age1' type="text" name="Age1" class="input"></td>
+							</tr>
+							
+							<tr>
+								<td>Referred By</td>
+								<td><input id='Referred1' type="text" name="Referred1" class="input"></td>
+
+								<td>Reg No</td>
+								<td><input id ='Reg_No1' type="text" name="Reg_No1" class="input" value="July-2020-OPD/"></td>
+							</tr>
+							
+							<tr>
+								<td>Date</td>
+								<td><input id ='Date1' type="date" name="Date1" class="input"></td>
+								
+							</tr>
+							<tr><td><h3>Microscopic Analysis</h3></td> </tr>
+							<tr>
+								<td>RBC</td>
+								<td><input id ='RBC1' type="text" name="RBC1" class="input"></td>
+                                <td>WBC</td>
+								<td><input id ='WBC1' type="text" name="WBC1" class="input"></td>
+                            </tr>
+                            <tr>
+								<td>Epithelial Cells </td>
+								<td><input id ='epithelial1' type="text" name="epithelial1" class="input"></td>
+                                <td>Casts</td>
+								<td><input id ='Casts1' type="text" name="Casts1" class="input"></td>
+                            </tr>
+							
+							<tr>
+								<td>Crystals</td>
+								<td><input id ='Crystals1' type="text" name='Crystals1' class="input"></td>
+								<td>Bacteria</td>
+								<td><input id ='Bacteria1' type="text" name='Bacteria1' class="input"></td>
+							</tr>
+							<tr><td><h3>Physical Examination</h3></td> </tr>
+							<tr>
+								<td>Color</td>
+								<td><input id ='Color1' type="text" name='Color1' class="input"></td>
+								<td>Quantity</td>
+								<td><input id ='Quantity1' type="text" name='Quantity1' class="input"></td>
+                            </tr>
+                            
+                            <tr>
+								<td>Apperance</td>
+								<td><input id ='Apperance1' type="text" name='Apperance1' class="input"></td>
+								<td>Specific Gravity</td>
+								<td><input id ='SG1' type="text" name='SG1' class="input"></td>
+                            </tr>
+                            <tr>
+								<td>Reaction</td>
+								<td><input id ='Reaction1' type="text" name='Reaction1' class="input"></td>
+								
+                            </tr>
+							<tr><td><h3>Chemical Examination</h3></td> </tr>
+
+                            <tr>
+								<td>Sugar</td>
+								<td><input id ='Sugar1' type="text" name='Sugar1' class="input"></td>
+								<td>Blood</td>
+								<td><input id ='Blood1' type="text" name='Blood1' class="input"></td>
+                            </tr>
+                            <tr><td>Proteins</td>
+								<td><input id ='Proteins1' type="text" name='Proteins1' class="input"></td></tr>
+							
+							<tr>
+							<td><input type="submit" value="Submit" name="done" class="btn btn-success btn-sm w-100"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		<script type="text/javascript" src='./Urine_Analysis.js' defer></script>
+	</body>
+</html>
