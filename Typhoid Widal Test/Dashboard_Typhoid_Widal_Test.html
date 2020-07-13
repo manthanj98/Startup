@@ -1,0 +1,98 @@
+<!--
+Personal Information
+1. Name
+2. Age
+3. Sex
+4. Reg No
+5. Referred By
+6. Date
+
+Input
+1. Result
+2. S. Typhi "H"
+3. S. Typhi "O"
+4. S. Typhi "AH"
+5. S. Typhi "BH"
+
+	<form id="valform" action="Typhoid_Widal_Test.html" method="GET">
+	<table action="Typhoid_Widal_Test.html" class="table" width="100%">
+	<script type="text/javascript" src='./Typhoid_Widal_Main.js' defer></script>
+-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Typhoid Widal Test</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+			<style>
+				table td{
+					border:0 !important;
+				}
+				.input{
+					border:none;
+					box-shadow:0 0 5px 0 #000;
+					border-radius:5px;
+					padding:2px 5px;
+					transition:.2s;
+				}
+				.input:hover{
+					box-shadow:0 0 10px 0 #000;
+				}
+			</style>
+	</head>
+	<body>
+			<div class=" container inputcontainer py-5" id="bodylayer">
+				<div class="formcontainer">
+					<form id="valform" action="Typhoid_Widal_Test.html" method="GET">
+						<table action="Typhoid_Widal_Test.html" class="table" width="100%">
+							<!-- Name Age -->
+							<tr>
+								<td>Name</td>
+								<td><input id="Name" type="text" name="Name" class="input"></td>
+								<td>Age</td>
+								<td><input id ='Age' type="text" name="Age" class="input"></td>
+							</tr>
+							<!-- Sex Reg No -->
+							<tr>
+								<td>Sex</td>
+								<td><input id ='Sex' type="text" name="Sex" class="input"></td>
+								<td>Reg No</td>
+								<td><input id ='Reg_No' type="text" name="Reg_No" class="input" value="July-2020-OPD/"></td>
+							</tr>
+							<!-- Date Referrd By -->
+							<tr>
+								<td>Date</td>
+								<td><input id ='Date1' type="date" name="Date1" class="input"></td>
+								<td>Referred By</td>
+								<td><input id='Referred' type="text" name="Referred" class="input"></td>
+							</tr>
+							<!-- Result -->
+							<tr>
+								<td>Result</td>
+								<td><input id ='Result' type="text" name="Result" class="input"></td>
+							</tr>
+							<!-- S. Typhi "H" S. Typhi "O" -->
+							<tr>
+								<td>S. Typhi "H"</td>
+								<td><input id ='h' type="text" name='h' class="input"></td>
+								<td>S. Typhi "O"</td>
+								<td><input id ='o' type="text" name='o' class="input"></td>
+							</tr>
+							<!-- S. Typhi "AH" S. Typhi "BH" -->
+							<tr>
+								<td>S. Typhi "AH"</td>
+								<td><input id ='ah' type="text" name='ah' class="input"></td>
+								<td>S. Typhi "BH"</td>
+								<td><input id ='bh' type="text" name='bh' class="input"></td>
+							</tr>
+							<!-- Submit Button -->
+							<tr>
+							<td><input type="submit" value="Submit" name="done" class="btn btn-success btn-sm w-100"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		<script type="text/javascript" src='./Typhoid_Widal_Main.js' defer></script>
+	</body>
+</html>
