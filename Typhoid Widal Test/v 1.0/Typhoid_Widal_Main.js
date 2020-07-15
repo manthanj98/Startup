@@ -61,4 +61,13 @@ STyphiOChange.innerHTML =o;
 STyphiAHChange.innerHTML =ah;
 STyphiBHChange.innerHTML =bh;
 
+if(Result==='Negative')
+{
+	document.getElementById("Rectangle_6").style.fill= "green" ;
+	document.getElementById("Rectangle_6").style.fillOpacity=0.25;
 
+}
+else
+{document.getElementById("Rectangle_6").style.fill= "red" ;
+document.getElementById("Rectangle_6").style.fillOpacity=0.25;
+}

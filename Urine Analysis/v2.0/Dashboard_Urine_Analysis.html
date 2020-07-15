@@ -34,7 +34,13 @@ Input
 					border-radius:5px;
 					padding:2px 5px;
 					transition:.2s;
+					
 				}
+				select {
+        width: 190px;
+        
+    }
+    
 				.input:hover{
 					box-shadow:0 0 10px 0 #000;
 				}
@@ -47,9 +53,12 @@ Input
         <h1 id='heading'>Urine Analysis Test</h1>
 			<div class=" container inputcontainer py-5" id="bodylayer">
 				<div class="formcontainer">
-					<form id="valform" action="Urine_Analysis_Test.html" method="GET">
-						<table action="Urine_Analysis_Test.html" class="table" width="100%">
-							
+					<form id="valform" action="Urine_Analysis.html" method="GET">
+						<table action="Urine_Analysis.html" class="table" width="100%">
+							<tr>
+								<td> Pathology Name</td>
+								<td><input id="pathoName" type="text" name="pathoName" class="input"></td>
+							</tr>
 							<tr>
 								<td>Name</td>
 								<td><input id="Name1" type="text" name="Name1" class="input"></td>
@@ -59,7 +68,12 @@ Input
 							
 							<tr>
 								<td>Referred By</td>
-								<td><input id='Referred1' type="text" name="Referred1" class="input"></td>
+								<td><select id='Referred12' type="text" name="Referred12" class="input">
+									<option  >Dr. B M Vishkarma</option>	
+									<option >Dr S N Singh</option>	
+									
+								</select>
+								</td>
 
 								<td>Reg No</td>
 								<td><input id ='Reg_No1' type="text" name="Reg_No1" class="input" value="July-2020-OPD/"></td>
@@ -73,29 +87,49 @@ Input
 							<tr><td><h3>Microscopic Analysis</h3></td> </tr>
 							<tr>
 								<td>RBC</td>
-								<td><input id ='RBC1' type="text" name="RBC1" class="input"></td>
-                                <td>WBC</td>
-								<td><input id ='WBC1' type="text" name="WBC1" class="input"></td>
+								<td><select id ='RBC1' type="text" name="RBC1" class="input" >
+									<option >Absent</option>	
+									<option >Present</option>	
+									
+								</select>
+								</td>
+                                <td>PUS</td>
+								<td><input id ='PUS1' type="text" name="PUS1" class="input"></td>
                             </tr>
                             <tr>
 								<td>Epithelial Cells </td>
 								<td><input id ='epithelial1' type="text" name="epithelial1" class="input"></td>
                                 <td>Casts</td>
-								<td><input id ='Casts1' type="text" name="Casts1" class="input"></td>
-                            </tr>
+								<td><select id ='Casts1' type="text" name="Casts1" class="input">
+									<option  >Absent</option>	
+									<option >Present</option>	
+									
+								</select>
+								</td>
+								</tr>
 							
 							<tr>
 								<td>Crystals</td>
-								<td><input id ='Crystals1' type="text" name='Crystals1' class="input"></td>
+								<td><select id ='Crystals1' type="text" name='Crystals1' class="input">
+								<option  >Absent</option>	
+									<option >Present</option>	
+									
+								</select>
+							</td>
 								<td>Bacteria</td>
-								<td><input id ='Bacteria1' type="text" name='Bacteria1' class="input"></td>
-							</tr>
+								<td><select id ='Bacteria1' type="text" name='Bacteria1' class="input">
+									<option  >Absent</option>	
+									<option >Present</option>	
+									
+								</select>
+								</td>
+								</tr>
 							<tr><td><h3>Physical Examination</h3></td> </tr>
 							<tr>
 								<td>Color</td>
 								<td><input id ='Color1' type="text" name='Color1' class="input"></td>
 								<td>Quantity</td>
-								<td><input id ='Quantity1' type="text" name='Quantity1' class="input"></td>
+								<td><input id ='Quantity1' type="text" name='Quantity1' class="input" value ='20ml'></td>
                             </tr>
                             
                             <tr>
@@ -106,20 +140,38 @@ Input
                             </tr>
                             <tr>
 								<td>Reaction</td>
-								<td><input id ='Reaction1' type="text" name='Reaction1' class="input"></td>
-								
+								<td><select id ='Reaction1' type="text" name='Reaction1' class="input">
+									<option  >Acidic</option>	
+									<option >Alkaline</option>	
+									
+								</select>
+							</td>
                             </tr>
 							<tr><td><h3>Chemical Examination</h3></td> </tr>
 
                             <tr>
 								<td>Sugar</td>
-								<td><input id ='Sugar1' type="text" name='Sugar1' class="input"></td>
-								<td>Blood</td>
-								<td><input id ='Blood1' type="text" name='Blood1' class="input"></td>
-                            </tr>
+								<td><select id ='Sugar1' type="text" name='Sugar1' class="input">
+									<option  >Absent</option>	
+									<option >Present</option>	
+									
+								</select>
+							</td>
+									<td>Blood</td>
+								<td><select id ='Blood1' type="text" name='Blood1' class="input">
+									<option  >Absent</option>	
+									<option >Present</option>	
+									
+								</select>
+								</td>
+								</tr>
                             <tr><td>Proteins</td>
-								<td><input id ='Proteins1' type="text" name='Proteins1' class="input"></td></tr>
-							
+								<td><select id ='Proteins1' type="text" name='Proteins1' class="input">
+								<option  >Absent</option>	
+									<option >Present</option>	
+									
+								</select>
+								</td></tr>
 							<tr>
 							<td><input type="submit" value="Submit" name="done" class="btn btn-success btn-sm w-100"></td>
 							</tr>
@@ -127,6 +179,6 @@ Input
 					</form>
 				</div>
 			</div>
-		<script type="text/javascript" src='./Urine_Analysis.js' defer></script>
+		<script type="text/javascript" src='./Urine_Analysis.js' ></script>
 	</body>
 </html>
