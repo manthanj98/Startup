@@ -1,16 +1,15 @@
 // Grab values from the submitted form in the URL
 const words = new URLSearchParams(window.location.search);
 
-const address =(words.get('address1'));
-const pathoname=(words.get('pathoname1'));
-const sex=(words.get('sex1'));
+const address =(words.get('address'));
+const lab_name=(words.get('lab_name'));
+const sex=(words.get('sex'));
 const doctorname=(words.get('doctorname1'));
 const name1 = (words.get('name1'));
 const patientid = (words.get('patientid1'));
 const age1  = (words.get('age1'));
 const age=`${age1}/${sex}`
-const receivedate  = (words.get('receivedate'));
-const printdate  = (words.get('printdate'));
+const date  = (words.get('date'));
 const haemoglobin  = (words.get('haemoglobin'));
 const platelet  = (words.get('platelet'));
 const rbc  = (words.get('rbc'));
@@ -68,13 +67,13 @@ const pathonamechange = document.getElementById("Lab_Name");
 const addresschange =document.getElementById("Address");
 
 
-pathonamechange.innerHTML=pathoname;
+pathonamechange.innerHTML=lab_name;
 addresschange.innerHTML=address;
 doctornamechange.innerHTML =doctorname;
 namechange.innerHTML = name1;
 patientidchange.innerHTML = patientid ; 
 agesexchange.innerHTML =age;
-printdatechange.innerHTML = printdate;
+printdatechange.innerHTML = date;
 
 
 if(sex==='F' || sex==='f' || sex==='female'||sex==='Female')
