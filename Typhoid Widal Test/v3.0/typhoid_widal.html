@@ -1,0 +1,158 @@
+<!--
+Personal Information
+1. Name
+2. Age
+3. Sex
+4. Reg No
+5. Referred By
+6. Date
+
+Input
+1. Result
+2. S. Typhi "H"
+3. S. Typhi "O"
+4. S. Typhi "AH"
+5. S. Typhi "BH"
+
+	<form id="valform" action="Typhoid_Widal_Test.html" method="GET">
+	<table action="Typhoid_Widal_Test.html" class="table" width="100%">
+	<script type="text/javascript" src='./Typhoid_Widal_Main.js' defer></script>
+-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Typhoid Widal Test</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+			<style>
+				table td{
+					border:0 !important;
+				}
+				.input{
+					border:none;
+					box-shadow:0 0 5px 0 #000;
+					border-radius:5px;
+					padding:2px 5px;
+					transition:.2s;
+				}
+				select{
+					width: 190px;
+				}
+				.input:hover{
+					box-shadow:0 0 10px 0 #000;
+				}
+			</style>
+	</head>
+	<body>
+			<div class=" container inputcontainer py-5" id="bodylayer">
+				<div class="formcontainer">
+					<form id="valform" action="typhoid_widal_report.html" method="GET">
+						<table action="typhoid_widal_report.html" class="table" width="100%">
+							<!-- Name -->
+							<tr>
+								<td>Name</td>
+								<td><input id="name" type="text" name="name" class="input"></td>
+								<!--
+								<td>Age/Sex</td>
+								<td><input id ='agesex' type="text" name="agesex" class="input"></td>
+								-->
+							</tr>
+							<!-- Age Sex -->
+							<tr>
+								<td>Age</td>
+								<td><input id="age" type="text" name="age" class="input"></td>
+								<td>Sex</td>
+								<td><select id ='sex' type="text" name="sex" class="input">
+								<option>Male</option>
+								<option>Female</option>
+								</select>
+								</td>
+							</tr>
+							<!-- Reg No Referred By -->
+							<tr>
+								<td>Reg No</td>
+								<td><input id ='reg_no' type="text" name="reg_no" class="input" value="July-2020-OPD/"></td>
+								<td>Referred By</td>
+								<td><input id='referred_by' type="text" name="referred_by" class="input"></td>
+							</tr>
+
+							<!-- Date -->
+							<tr>
+								<!--
+								<td>Date</td>
+								<td><input id ='Date1' type="date" name="Date1" class="input"></td>
+								-->
+							<!-- Result -->
+							<tr>
+								<td>Result</td>
+								<td><select id ='result' type="text" name="Result" class="input">
+								<option>Positive</option>
+								<option>Negative</option>
+								</select>
+								</td>
+							</tr>
+							<!-- S. Typhi "H" S. Typhi "O" -->
+							<tr>
+								<td>S. Typhi "H"</td>
+								<td><select id ='h' type="text" name='h' class="input">
+								<option>1:40</option>
+								<option>1:20</option>
+								<option>1:80</option>
+								<option>1:160</option>
+								<option>1:320</option>
+								</select>
+								</td>
+								<td>S. Typhi "O"</td>
+								<td><select id ='o' type="text" name='o' class="input">
+									<option>1:40</option>
+									<option>1:20</option>
+									<option>1:80</option>
+									<option>1:160</option>
+									<option>1:320</option>
+									</select>
+									</td>
+							</tr>
+							<!-- S. Typhi "AH" S. Typhi "BH" -->
+							<tr>
+								<td>S. Typhi "AH"</td>
+								<td><select id ='ah' type="text" name='ah' class="input">
+									<option>1:40</option>
+									<option>1:20</option>
+									<option>1:80</option>
+									<option>1:160</option>
+									<option>1:320</option>
+									</select></td>
+								<td>S. Typhi "BH"</td>
+								<td><select id ='bh' type="text" name='bh' class="input">
+									<option>1:40</option>
+									<option>1:20</option>
+									<option>1:80</option>
+									<option>1:160</option>
+									<option>1:320</option>
+									</select></td>
+							</tr>
+							<!--Contact Details-->
+							<tr>
+								<td>Lab Name</td>
+								<td><input id ='lab_name' type="text" name='lab_name' class="input" value="Sangam Pathology Labs"></select></td>
+								<td>Address</td>
+								<td><input id ='address' type="text" name='address' class="input", value="Hospital Chowk, Nagod Distric, Satna (M.P.)"></select></td>
+							</tr>
+							<!-- Bilirubin and Blood Sugar-->
+							<tr>
+								<td>Total Bilirubin</td>
+								<td><input id ='total_bilirubin' type="number" name='total_bilirubin' class="input" value="-1"></select></td>
+								<td>Blood Sugar Random</td>
+								<td><input id ='blood_sugar_random' type="text" name='blood_sugar_random' class="input", value="-1"></select></td>
+							</tr>
+							<!-- Submit Button -->
+							<tr>
+							<td><input type="submit" value="Submit" name="done" class="btn btn-success btn-sm w-100"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		<script type="text/javascript" src='./typhoid_widal.js' defer></script>
+	</body>
+</html>
